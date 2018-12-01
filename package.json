@@ -8,6 +8,7 @@
     "@sailshq/connect-redis": "^3.2.1",
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
+    "forever": "^0.15.3",
     "grunt": "1.0.1",
     "request": "^2.88.0",
     "sails": "^1.1.0",
@@ -21,7 +22,7 @@
     "supertest": "^3.3.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
+    "start": "SET PORT=8080 && node app.js",
     "test": "node ./node_modules/mocha/bin/mocha test/lifecycle.test.js test/integration/**/*.test.js",
     "lint": "eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo"

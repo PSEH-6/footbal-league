@@ -2,7 +2,6 @@
 var supertest = require('supertest');
 
 describe('CountryController.getCountries', function () {
-
     describe('#Fetch()', function () {
         it('should fetch', function (done) {
             supertest(sails.hooks.http.app)
